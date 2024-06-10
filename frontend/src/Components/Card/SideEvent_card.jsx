@@ -1,10 +1,12 @@
 import React from 'react'
 
-const SideEvent_card = () => {
+const SideEvent_card = ({name}) => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <section>
+        {name}
+      </section>
+    </>
   )
 }
 

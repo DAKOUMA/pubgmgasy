@@ -1,10 +1,12 @@
 import React from 'react'
 
-const MainEvent_card = () => {
+const MainEvent_card = ({name}) => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <article>
+        {name}
+      </article>
+    </>
   )
 }
 

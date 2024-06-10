@@ -22,7 +22,7 @@ const Server = () => {
             logo: "https://upload.wikimedia.org/wikipedia/commons/4/43/PUBG_Mobile_simple_logo_black.png",
             description: "scrims/event"
         },
-    ] 
+    ]
 
     return (
         <>
@@ -30,13 +30,13 @@ const Server = () => {
             <main className='page-section'>
                 <h1>Server</h1>
                 {
-                    DiscordServer_list.map( (value, index) => (
+                    DiscordServer_list.map((value, index) => (
                         <DiscordServer_card
-                         key={index}
-                         name={value.name}
-                         link={value.link}
-                         logo={value.logo}
-                         description={value.description} 
+                            key={index}
+                            name={value.name}
+                            link={value.link}
+                            logo={value.logo}
+                            description={value.description}
                         />
                     ))
                 }

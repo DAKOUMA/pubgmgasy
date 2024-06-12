@@ -5,7 +5,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    > button {
+
+    >button {
         font-size: 2rem;
         margin: 10rem auto 0 auto;
         width: fit-content;
@@ -15,7 +16,83 @@
 
 .landingText {
     padding-top: 3rem;
-    > p {
+
+    >p {
         font-size: 4rem;
+    }
+}
+
+.welcomeText {
+    padding-top: 3rem;
+
+    >p {}
+}
+
+.first-screen {
+    display: flex;
+    flex-direction: column;
+}
+
+.second-screen {
+    opacity: 0;
+}
+
+.third-screen {
+    opacity: 0;
+}
+
+.final-screen {
+    opacity: 0;
+}
+.animation-ready {
+    &-0 {
+        animation: firstAnimation 2s forwards;
+    }
+
+    &-1 {
+        animation: secondAnimation 6s 2s forwards ease-in-out;
+    }
+
+    &-2 {
+        animation: secondAnimation 6s 8s forwards ease-in-out;
+    }
+
+    &-3 {
+        animation: finalAnimation 4s 14s forwards ease-in-out;
+    }
+}
+
+@keyframes firstAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes secondAnimation {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes finalAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

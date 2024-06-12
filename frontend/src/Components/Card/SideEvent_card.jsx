@@ -3,7 +3,7 @@ import React from 'react'
 const SideEvent_card = ({name}) => {
   return (
     <>
-      <section>
+      <section className='border border-black flex w-ful'>
         {name}
       </section>
     </>

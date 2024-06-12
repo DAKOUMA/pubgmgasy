@@ -1,0 +1,34 @@
+.day {
+    background-color: aqua;
+
+    &Title {
+        padding: 0.6rem 1rem 0.6rem 1rem;
+        background-color: brown;
+    }
+
+    &Hour-container {
+        display: flex;
+        flex-direction: column;
+        background-color: cadetblue;
+    }
+}
+
+.dayHour {
+    padding: 0.6rem 1rem 0.6rem 1rem;
+    background-color: red;
+}
+
+.hour {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    > .hourBlank {
+        padding: 0.6rem 1rem 0.6rem 1rem;
+    }
+}
+
+.hour-container {
+    > div {
+        padding: 0.6rem 1rem 0.6rem 1rem;
+    }
+}

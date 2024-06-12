@@ -3,7 +3,7 @@ import React from 'react'
 const MainEvent_card = ({name}) => {
   return (
     <>
-      <article>
+      <article className='border border-black flex w-full'>
         {name}
       </article>
     </>

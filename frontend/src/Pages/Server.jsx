@@ -29,17 +29,19 @@ const Server = () => {
             <NavBar />
             <main className='page-section'>
                 <h1>Server</h1>
-                {
-                    DiscordServer_list.map((value, index) => (
-                        <DiscordServer_card
-                            key={index}
-                            name={value.name}
-                            link={value.link}
-                            logo={value.logo}
-                            description={value.description}
-                        />
-                    ))
-                }
+                <article className='flex flex-col md:grid md:grid-cols-4 md:grid-rows-3'>
+                    {
+                        DiscordServer_list.map((value, index) => (
+                            <DiscordServer_card
+                                key={index}
+                                name={value.name}
+                                link={value.link}
+                                logo={value.logo}
+                                description={value.description}
+                            />
+                        ))
+                    }
+                </article>
             </main>
         </>
     )

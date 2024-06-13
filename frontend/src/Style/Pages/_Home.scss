@@ -6,8 +6,8 @@
     right: 0;
     bottom: 0;
 
-    >button {
-        font-size: 2rem;
+    > button {
+        font-size: 1.5rem;
         margin: 10rem auto 0 auto;
         width: fit-content;
         border: solid black 1px;
@@ -17,15 +17,15 @@
 .landingText {
     padding-top: 3rem;
 
-    >p {
-        font-size: 4rem;
+    > p {
+        font-size: 2rem;
     }
 }
 
 .welcomeText {
-    padding-top: 3rem;
+    padding-top: 2rem;
 
-    >p {}
+    > p {}
 }
 
 .first-screen {
@@ -94,5 +94,37 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .landingText {
+        padding-top: 3rem;
+    
+        > p {
+            font-size: 4rem;
+        }
+    }
+    
+    .welcomeText {
+        padding-top: 3rem;
+    
+        > p {}
+    }
+
+    .animated-screen {
+        border: 2px solid black;
+        position: absolute;
+        top: 2rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    
+        > button {
+            font-size: 2rem;
+            margin: 6rem auto 0 auto;
+            width: fit-content;
+            border: solid black 1px;
+        }
     }
 }

@@ -7,9 +7,9 @@ const Event = () => {
     return (
         <>
             <NavBar />
-            <main className='page-section flex flex-row justify-between px-8 gap-14'>
+            <main className='page-section flex flex-col justify-between px-8 gap-14 md:flex-row'>
                 <MainEvent_card name={'mainEvent'} />
-                <aside className='flex flex-col w-2/3'>
+                <aside className='flex flex-row justify-between md:flex-col md:w-2/3'>
                     <SideEvent_card name={'sideEvent-1'} />
                     <SideEvent_card name={'sideEvent-2'} />
                 </aside>

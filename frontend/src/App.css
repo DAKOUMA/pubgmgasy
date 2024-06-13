@@ -7,7 +7,7 @@
   bottom: 0;
 }
 .animated-screen > button {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 10rem auto 0 auto;
   width: -moz-fit-content;
   width: fit-content;
@@ -18,11 +18,11 @@
   padding-top: 3rem;
 }
 .landingText > p {
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .welcomeText {
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 .first-screen {
   display: flex;
@@ -84,6 +84,32 @@
   }
   100% {
     opacity: 1;
+  }
+}
+@media (min-width: 768px) {
+  .landingText {
+    padding-top: 3rem;
+  }
+  .landingText > p {
+    font-size: 4rem;
+  }
+  .welcomeText {
+    padding-top: 3rem;
+  }
+  .animated-screen {
+    border: 2px solid black;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .animated-screen > button {
+    font-size: 2rem;
+    margin: 6rem auto 0 auto;
+    width: -moz-fit-content;
+    width: fit-content;
+    border: solid black 1px;
   }
 }
 .day {
